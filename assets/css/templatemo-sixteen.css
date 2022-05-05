@@ -6,7 +6,7 @@ https://templatemo.com/tm-546-sixteen-clothing
 
 */
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   overflow-x: hidden;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -222,12 +222,13 @@ header .navbar {
 	padding: 17px 0px;
 }
 .background-header {
-	top: 0;
-	position: fixed;
+	/* top: 0;
+	position: fixed; */
 	background-color: #fff!important;
 	box-shadow: 0px 1px 10px rgba(0,0,0,0.1);
 }
-.background-header .navbar-brand h2 {
+.background-header .announcements p {
+	display: none;
 	color: #121212!important;
 }
 .background-header .navbar-nav a.nav-link {
@@ -491,7 +492,8 @@ header .navbar {
 }
 
 .best-features {
-	margin-top: 50px;
+	background-color: rgba(0, 0, 0, 0.87);
+	padding-bottom: 0;
 }
 
 .best-features .container .row {
