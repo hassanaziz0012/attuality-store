@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap"
         rel="stylesheet">
 
-    <link rel="shortcut icon" href="assets/images/logo.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/images/logo.webp" type="image/x-icon">
 
     <title>Attuality Store</title>
 
@@ -46,11 +46,17 @@ https://templatemo.com/tm-546-sixteen-clothing
 
     <!-- Header -->
     <header class="">
-        <div class="w-100 d-flex justify-content-center text-center">
+        <div class="w-100 d-flex justify-content-center text-center announcements-container">
             <div class="announcements owl-carousel">
                 <p class="text-white p-1">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, ipsa facilis. Earum tempore maxime
                     quas!
+                </p>
+                <p class="text-white p-1">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel obcaecati neque saepe!
+                </p>
+                <p class="text-white p-1">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, eum laborum iusto ut accusamus error magni?
                 </p>
             </div>
         </div>
@@ -626,6 +632,9 @@ https://templatemo.com/tm-546-sixteen-clothing
             $('.owl-carousel.announcements').owlCarousel({
                 loop: true,
                 items: 1,
+                autoplay:true,
+                autoplayTimeout:4000,
+                autoplayHoverPause:false,
             })
         </script>
 
