@@ -9,8 +9,8 @@
 }
 
 .announcements p {
-    /* border: 1px solid rgba(0, 0, 0, 0.07); */
     font-weight: 500;
+    text-decoration: underline;
 }
 
 .navbar-brand img.logo {
