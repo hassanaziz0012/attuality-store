@@ -561,11 +561,14 @@ https://templatemo.com/tm-546-sixteen-clothing
 
         <script>
             $('.owl-carousel.brands').owlCarousel({
-                rtl: true,
+                rtl: false,
                 loop: true,
                 pagination: false,
                 dots: false,
                 margin: 0,
+                autoplay: 1500,
+                autoplayTimeout:2500,
+                autoplayHoverPause:false,
                 responsive: {
                     0: {
                         items: 1
