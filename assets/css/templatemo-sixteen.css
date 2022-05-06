@@ -6,7 +6,7 @@ https://templatemo.com/tm-546-sixteen-clothing
 
 */
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Futura', sans-serif !important;
   overflow-x: hidden;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
