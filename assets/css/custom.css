@@ -54,6 +54,7 @@
 }
 
 .product .card-body .card-title {
+    text-transform: uppercase;
     text-align: center;
 }
 
@@ -68,15 +69,31 @@
     color: #000;
 }
 
+.product:hover .card-body .card-title {
+    text-decoration: underline;
+}
+
 .product .card-footer {
     border: none;
     background-color: #E7E7E7;
+}
+
+.product .card-footer .sizes {
+    visibility: hidden;
+}
+
+.product:hover .card-footer .sizes {
+    visibility: visible;
 }
 
 .product .card-footer .sizes .size {
     margin: auto 5px;
     border: 1px solid rgba(0, 0, 0, 0.5);
     padding: 0.25em 0.5em;
+}
+
+.product .card-footer .sizes .size:hover {
+    cursor: pointer;
 }
 
 /* PRODUCT CARD STYLES - END */
