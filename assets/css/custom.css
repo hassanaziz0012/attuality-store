@@ -53,6 +53,12 @@
     border-bottom: none;
 }
 
+.product .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .product .card-body .card-title {
     text-transform: uppercase;
     text-align: center;
