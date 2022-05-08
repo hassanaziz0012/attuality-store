@@ -123,6 +123,7 @@ body {
 
 .product .card-footer .sizes .size:focus {
     border: 1px solid #000;
+    box-shadow: 3px 1px 1px 1px #68a8e0;
     outline: 0;
 }
 
