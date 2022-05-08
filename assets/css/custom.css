@@ -6,7 +6,9 @@
         url("https://fonts.shopifycdn.com/futura/futura_n4.6bce24beb4ba1ff4ddeb20f7cd6e2fa513a3d6ec.woff?&hmac=0103d4b4c242038a4673909d15ddc0fe2f54962088997a60bd7f07bfc9266a4f") format("woff");
 }
 
-*, html, body {
+*,
+html,
+body {
     font-family: 'Futura', sans-serif !important;
 }
 
@@ -94,6 +96,10 @@
 
 .product .card-footer .sizes .size {
     margin: auto 5px;
+    text-align: center;
+    vertical-align: middle;
+    width: 50px;
+    height: 35px;
     border: 1px solid rgba(0, 0, 0, 0.5);
     padding: 0.25em 0.5em;
 }
