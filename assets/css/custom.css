@@ -71,10 +71,12 @@ body {
 .product .card-body .card-title {
     text-transform: uppercase;
     text-align: center;
+    font-size: 17px;
 }
 
 .product .card-body .price {
     text-align: center;
+    font-size: 18px;
     color: #f33f3f;
 }
 
@@ -115,7 +117,14 @@ body {
 
 .product .card-footer .sizes .size:hover {
     cursor: pointer;
+    border: 1px solid #000;
+    background-color: transparent;
 }
+
+/* .product .card-footer .sizes .size:focus {
+    border: 5px solid rgba(0, 0, 255, 0.5);
+    border-radius: 25%;
+} */
 
 /* PRODUCT CARD STYLES - END */
 
