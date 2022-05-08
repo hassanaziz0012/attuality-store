@@ -34,6 +34,10 @@ body {
     text-decoration: underline;
 }
 
+.announcements p span {
+    white-space: pre;
+}
+
 .navbar-brand img.logo {
     width: 175px;
 }
