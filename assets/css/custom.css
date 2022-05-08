@@ -6,10 +6,17 @@
         url("https://fonts.shopifycdn.com/futura/futura_n4.6bce24beb4ba1ff4ddeb20f7cd6e2fa513a3d6ec.woff?&hmac=0103d4b4c242038a4673909d15ddc0fe2f54962088997a60bd7f07bfc9266a4f") format("woff");
 }
 
+@font-face {
+    font-family: proxima-nova;
+    font-weight: 400;
+    font-style: normal;
+    src: url("/assets/fonts/Proxima Nova Font.otf");
+}
+
 *,
 html,
 body {
-    font-family: 'Futura', sans-serif !important;
+    font-family: 'proxima-nova', sans-serif !important;
 }
 
 .brand-content {
