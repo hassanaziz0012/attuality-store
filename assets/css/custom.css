@@ -128,6 +128,9 @@ body {
     outline: 0;
 }
 
+@media screen and (max-width: 1672px) {
+}
+
 /* PRODUCT CARD STYLES - END */
 
 /* BRAND STYLES - START */
