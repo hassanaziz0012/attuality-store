@@ -121,10 +121,10 @@ body {
     background-color: transparent;
 }
 
-/* .product .card-footer .sizes .size:focus {
-    border: 5px solid rgba(0, 0, 255, 0.5);
-    border-radius: 25%;
-} */
+.product .card-footer .sizes .size:focus {
+    border: 1px solid #000;
+    outline: 0;
+}
 
 /* PRODUCT CARD STYLES - END */
 
