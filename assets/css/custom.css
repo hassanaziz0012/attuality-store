@@ -42,6 +42,14 @@ body {
     width: 175px;
 }
 
+a.red-link {
+    color: #f33f3f;
+}
+
+a.red-link:hover {
+    font-weight: 600;
+}
+
 /* PRODUCT CARD STYLES - START */
 .products {
     background-color: #e7e7e7;
@@ -49,12 +57,17 @@ body {
 
 .product {
     background-color: #E7E7E7;
-    margin: 15px;
-    padding: 15px;
+    margin: 0;
+    padding: 0;
     border: none;
     border-radius: 0;
     display: flex;
     justify-content: space-between;
+}
+
+.col-md-2 {
+    flex: 0 0 20%;
+    max-width: 20%;
 }
 
 .product img {
