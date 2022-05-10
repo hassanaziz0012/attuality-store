@@ -37,6 +37,11 @@ i.fa {
     color: #000;
 }
 
+.text-content .section-heading {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
 .navbar-brand div.social-icons a {
     margin: 0 10px;
     display: inline;
