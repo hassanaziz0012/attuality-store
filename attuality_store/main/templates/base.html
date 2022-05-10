@@ -57,7 +57,7 @@ https://templatemo.com/tm-546-sixteen-clothing
             </div>
         </div>
         <nav class="navbar navbar-expand-lg">
-            <div class="d-flex flex-column container">
+            <div class="d-flex flex-column container-fluid">
                 <div class="navbar-brand d-flex justify-content-between align-items-center" href="index.html">
                     <div class="social-icons d-flex justify-content-center">
                         <a href="#">
@@ -181,16 +181,16 @@ https://templatemo.com/tm-546-sixteen-clothing
                             <div class="footer-widget footer-left-widget">
                                 <ul>
                                     <li><a href="{% url 'attuality-store' %}">Attuality Store</a></li>
-                                    <li><a href="#">Privacy & Cookie Policy</a></li>
-                                    <li><a href="#">Domande Frequenti</a></li>
-                                    <li><a href="#">Contattaci</a></li>
-                                    <li><a href="#">Spedizione e resi gratuiti</a></li>
+                                    <li><a href="{% url 'privacy' %}">Privacy & Cookie Policy</a></li>
+                                    <li><a href="{% url 'domande-frequenti' %}">Domande Frequenti</a></li>
+                                    <li><a href="{% url 'contattaci' %}">Contattaci</a></li>
+                                    <li><a href="{% url 'spedizione-resi-gratuiti' %}">Spedizione e resi gratuiti</a></li>
                                 </ul>
                                 <ul>
-                                    <li><a href="#">Pagamento</a></li>
-                                    <li><a href="#">Spedizione</a></li>
-                                    <li><a href="#">Resi & Cambi</a></li>
-                                    <li><a href="#">Servizi Online Esclusivi</a></li>
+                                    <li><a href="{% url 'pagamento' %}">Pagamento</a></li>
+                                    <li><a href="{% url 'spedizione' %}">Spedizione</a></li>
+                                    <li><a href="{% url 'resi-cambi' %}">Resi & Cambi</a></li>
+                                    <li><a href="{% url 'servizi' %}">Servizi Online Esclusivi</a></li>
                                 </ul>
                             </div>
                             <!-- End Footer Widget -->
@@ -212,24 +212,9 @@ https://templatemo.com/tm-546-sixteen-clothing
                     <div class="col-md-6">
                         <span>Copyright © 2022, Attuality Store, All Right Reserved</span>
                     </div>
-                    <!-- End Col -->
-                    <div class="col-md-6">
-                        <div class="copyright-menu">
-                            <ul>
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">Terms</a></li>
-                                <li><a href="#">Privacy Policy</a></li>
-                                <li><a href="#">Contact</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- End col -->
                 </div>
-                <!-- End Row -->
             </div>
-            <!-- End Copyright Container -->
         </div>
-        <!-- End Copyright -->
         <!-- Back to top -->
         <div id="back-to-top" class="back-to-top">
             <a href="#mainSection">
