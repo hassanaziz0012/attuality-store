@@ -25,6 +25,18 @@ i.fa {
     font-family: 'FontAwesome', sans-serif !important;
 }
 
+.btn-transparent {
+    background-color: transparent;
+    color: #fff;
+    border: 3px solid #fff;
+    border-radius: 0;
+}
+
+.btn-transparent:hover {
+    background-color: #fff;
+    color: #000;
+}
+
 .navbar-brand div.social-icons a {
     margin: 0 10px;
     display: inline;

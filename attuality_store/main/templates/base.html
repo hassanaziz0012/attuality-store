@@ -85,13 +85,48 @@ https://templatemo.com/tm-546-sixteen-clothing
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">ABBIGLIAMENTO UOMO</a>
+                            <a class="nav-link dropdown-toggle" href="#" id="uomoDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                ABBIGLIAMENTO UOMO
+                            </a>
+
+                            <div class="dropdown-menu" aria-labelledby="uomoDropdown">
+                                <a href="#" class="dropdown-item">Giacche</a>
+                                <a href="#" class="dropdown-item">Felpe con cappuccio</a>
+                                <a href="#" class="dropdown-item">Felpe</a>
+                                <a href="#" class="dropdown-item">Camicie</a>
+                                <a href="#" class="dropdown-item">Polo</a>
+                                <a href="#" class="dropdown-item">T-shirt</a>
+                                <a href="#" class="dropdown-item">Jeans</a>
+                                <a href="#" class="dropdown-item">Pantaloni</a>
+                                <a href="#" class="dropdown-item">Bermuda</a>
+                            </div>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">ACCESSORI</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="accessoryDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                ACCESSORI
+                            </a>
+
+                            <div class="dropdown-menu" aria-labelledby="accessoryDropdown">
+                                <a href="#" class="dropdown-item">Portafogli e Piccola Pelletteria</a>
+                                <a href="#" class="dropdown-item">Costumi da Bagno</a>
+                                <a href="#" class="dropdown-item">Ciabatte</a>
+                            </div>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#brands">BRAND</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="brandDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                BRAND
+                            </a>
+
+                            <div class="dropdown-menu" aria-labelledby="brandDropdown">
+                                <a class="dropdown-item" href="#brands">Versace</a>
+                                <a class="dropdown-item" href="#brands">Fendi</a>
+                                <a class="dropdown-item" href="#brands">Balmain</a>
+                                <a class="dropdown-item" href="#brands">Dsquared2</a>
+                                <a class="dropdown-item" href="#brands">Valentino</a>
+                                <a class="dropdown-item" href="#brands">Philipp Plein</a>
+                                <a class="dropdown-item" href="#brands">Palm Angels</a>
+                                <a class="dropdown-item" href="#brands">Marcelo Burlon</a>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -267,6 +302,8 @@ https://templatemo.com/tm-546-sixteen-clothing
         $('.owl-carousel.announcements').owlCarousel({
             loop: true,
             items: 1,
+            touchDrag: false,
+            mouseDrag: false,
             autoplay: true,
             autoplayTimeout: 4000,
             autoplayHoverPause: false,
