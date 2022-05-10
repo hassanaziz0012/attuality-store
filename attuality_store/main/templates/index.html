@@ -1,93 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap"
-        rel="stylesheet">
-
-    <link rel="shortcut icon" href="assets/images/logo.webp" type="image/x-icon">
-
-    <title>Attuality Store</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <!--
-
-TemplateMo 546 Sixteen Clothing
-
-https://templatemo.com/tm-546-sixteen-clothing
-
--->
-
-    <!-- Additional CSS Files -->
-    <link rel="stylesheet" href="assets/css/fontawesome.css">
-    <link rel="stylesheet" href="assets/css/templatemo-sixteen.css">
-    <link rel="stylesheet" href="assets/css/owl.css">
-    <link rel="stylesheet" href="assets/css/custom.css">
-
-</head>
-
-<body>
-
-    <!-- ***** Preloader Start ***** -->
-    <div id="preloader">
-        <div class="jumper">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-    </div>
-    <!-- ***** Preloader End ***** -->
-
-    <!-- Header -->
-    <header class="">
-        <div class="d-flex justify-content-center align-items-center text-center announcements-container">
-            <div class="announcements owl-carousel d-flex">
-                <p>
-                    <span>SPEDIZIONE GRATUITA  |  PAGAMENTO ALLA CONSEGNA</span>
-                </p>
-                <p>
-                    <span>SCOPRI  |  <a class="red-link" href="#">NUOVI ARRIVI</a></span>
-                </p>
-            </div>
-        </div>
-        <nav class="navbar navbar-expand-lg">
-            <div class="container d-flex flex-column">
-                <a class="navbar-brand" href="index.html">
-                    <img src="assets/images/logo-white-transparent.png" alt="Attuliaty Store Logo"
-                        class="img-fluid logo">
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-                    aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="index.html">HOME
-                                <span class="sr-only">(current)</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">ABBIGLIAMENTO UOMO</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">ACCESSORI</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">BRAND</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-
+{% extends 'base.html' %}
+{% block content %}
     <!-- Page Content -->
     <!-- Banner Starts Here -->
     <div id="mainSection" class="banner header-text">
@@ -114,7 +26,7 @@ https://templatemo.com/tm-546-sixteen-clothing
                     <div class="col-md-2 card product">
                         <div class="card-header">
                             <img class="img card-image-top"
-                                src="assets/images/product-images/bermuda_dsquared2_fronte-2.jpg" class="img-fluid"
+                                src="/static/assets/images/product-images/bermuda_dsquared2_fronte-2.jpg" class="img-fluid"
                                 alt="">
                         </div>
 
@@ -137,7 +49,7 @@ https://templatemo.com/tm-546-sixteen-clothing
                     <div class="col-md-2 card product">
                         <div class="card-header">
                             <img class="img card-image-top"
-                                src="assets/images/product-images/tshirt_valentino_bianca.jpg" class="img-fluid" alt="">
+                                src="/static/assets/images/product-images/tshirt_valentino_bianca.jpg" class="img-fluid" alt="">
                         </div>
 
                         <div class="card-body">
@@ -159,7 +71,7 @@ https://templatemo.com/tm-546-sixteen-clothing
                     <div class="col-md-2 card product">
                         <div class="card-header">
                             <img class="img card-image-top"
-                                src="assets/images/product-images/portacarte_dsquared2_milano_fronte.jpg"
+                                src="/static/assets/images/product-images/portacarte_dsquared2_milano_fronte.jpg"
                                 class="img-fluid" alt="">
                         </div>
 
@@ -178,7 +90,7 @@ https://templatemo.com/tm-546-sixteen-clothing
                     <div class="col-md-2 card product">
                         <div class="card-header">
                             <img class="img card-image-top"
-                                src="assets/images/product-images/tshirt_dsquared2_nera_rosa.jpg" class="img-fluid"
+                                src="/static/assets/images/product-images/tshirt_dsquared2_nera_rosa.jpg" class="img-fluid"
                                 alt="">
                         </div>
 
@@ -203,7 +115,7 @@ https://templatemo.com/tm-546-sixteen-clothing
                     <div class="col-md-2 card product">
                         <div class="card-header">
                             <img class="img card-image-top"
-                                src="assets/images/product-images/costume_valentino_fronte.jpg" class="img-fluid"
+                                src="/static/assets/images/product-images/costume_valentino_fronte.jpg" class="img-fluid"
                                 alt="">
                         </div>
 
@@ -226,7 +138,7 @@ https://templatemo.com/tm-546-sixteen-clothing
 
                     <div class="col-md-2 card product">
                         <div class="card-header">
-                            <img class="img card-image-top" src="assets/images/product-images/tshirt_valentino_nera.jpg"
+                            <img class="img card-image-top" src="/static/assets/images/product-images/tshirt_valentino_nera.jpg"
                                 class="img-fluid" alt="">
                         </div>
 
@@ -247,7 +159,7 @@ https://templatemo.com/tm-546-sixteen-clothing
                     <div class="col-md-2 card product">
                         <div class="card-header">
                             <img class="img card-image-top"
-                                src="assets/images/product-images/tshirt_dsquared2_bianca_icon-1.jpg" class="img-fluid"
+                                src="/static/assets/images/product-images/tshirt_dsquared2_bianca_icon-1.jpg" class="img-fluid"
                                 alt="">
                         </div>
 
@@ -270,7 +182,7 @@ https://templatemo.com/tm-546-sixteen-clothing
                     <div class="col-md-2 card product">
                         <div class="card-header">
                             <img class="img card-image-top"
-                                src="assets/images/product-images/bermuda_dsquared2_fronte.jpg" class="img-fluid"
+                                src="/static/assets/images/product-images/bermuda_dsquared2_fronte.jpg" class="img-fluid"
                                 alt="">
                         </div>
 
@@ -294,7 +206,7 @@ https://templatemo.com/tm-546-sixteen-clothing
                     <div class="col-md-2 card product">
                         <div class="card-header">
                             <img class="img card-image-top"
-                                src="assets/images/product-images/tshirt_marcelo_burlon_nera.jpg" class="img-fluid"
+                                src="/static/assets/images/product-images/tshirt_marcelo_burlon_nera.jpg" class="img-fluid"
                                 alt="">
                         </div>
 
@@ -317,7 +229,7 @@ https://templatemo.com/tm-546-sixteen-clothing
                     <div class="col-md-2 card product">
                         <div class="card-header">
                             <img class="img card-image-top"
-                                src="assets/images/product-images/tshirt_balmain_nera_saetta.jpg" class="img-fluid"
+                                src="/static/assets/images/product-images/tshirt_balmain_nera_saetta.jpg" class="img-fluid"
                                 alt="">
                         </div>
 
@@ -450,229 +362,4 @@ https://templatemo.com/tm-546-sixteen-clothing
 
         </div>
     </div>
-
-
-    <<footer id="dk-footer" class="dk-footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 col-lg-4">
-                    <div class="dk-footer-box-info">
-                        <a href="index.html" class="footer-logo">
-                            <img src="assets/images/logo-white-transparent.png" alt="footer_logo" class="img-fluid">
-                        </a>
-                        <p class="footer-info-text text-secondary">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde culpa doloremque quos hic
-                            repellat id itaque ducimus vel tempore laborum?
-                        </p>
-                        <div class="footer-social-link">
-                            <h3>Follow us</h3>
-                            <ul>
-                                <li>
-                                    <a href="#"><i class="fa fa-facebook"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#"><i class="fa fa-twitter"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#"><i class="fa fa-google-plus"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#"><i class="fa fa-linkedin"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#"><i class="fa fa-instagram"></i></a>
-                                </li>
-                            </ul>
-                        </div>
-                        <!-- End Social link -->
-                    </div>
-                </div>
-                <!-- End Col -->
-                <div class="col-md-12 col-lg-8">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="contact-us">
-                                <div class="contact-icon">
-                                    <i class="fa fa-map-o" aria-hidden="true"></i>
-                                </div>
-                                <!-- End contact Icon -->
-                                <div class="contact-info">
-                                    <h3>Attuality.store@gmail.com</h3>
-                                    <p class="text-secondary">Send us an email</p>
-                                </div>
-                                <!-- End Contact Info -->
-                            </div>
-                            <!-- End Contact Us -->
-                        </div>
-                        <!-- End Col -->
-                        <div class="col-md-6">
-                            <div class="contact-us contact-us-last">
-                                <div class="contact-icon">
-                                    <i class="fa fa-volume-control-phone" aria-hidden="true"></i>
-                                </div>
-                                <!-- End contact Icon -->
-                                <div class="contact-info">
-                                    <h3>+39 389 5392915</h3>
-                                    <p class="text-secondary">Give us a call</p>
-                                </div>
-                                <!-- End Contact Info -->
-                            </div>
-                            <!-- End Contact Us -->
-                        </div>
-                        <!-- End Col -->
-                    </div>
-                    <!-- End Contact Row -->
-                    <div class="row">
-                        <div class="col-md-12 col-lg-6">
-                            <div class="footer-widget footer-left-widget">
-                                <div class="section-heading">
-                                    <h3>Useful Links</h3>
-                                    <span class="animate-border border-black"></span>
-                                </div>
-                                <ul>
-                                    <li><a href="#">About us</a></li>
-                                    <li><a href="#">Services</a></li>
-                                    <li><a href="#">Projects</a></li>
-                                    <li><a href="#">Our Team</a></li>
-                                </ul>
-                                <ul>
-                                    <li><a href="#">Contact us</a></li>
-                                    <li><a href="#">Blog</a></li>
-                                    <li><a href="#">Testimonials</a></li>
-                                    <li><a href="#">Faq</a></li>
-                                </ul>
-                            </div>
-                            <!-- End Footer Widget -->
-                        </div>
-                        <!-- End col -->
-                        <div class="col-md-12 col-lg-6">
-                            <div class="footer-widget">
-                                <div class="section-heading">
-                                    <h3>Subscribe</h3>
-                                    <span class="animate-border border-black"></span>
-                                </div>
-                                <p class="text-secondary">
-                                    <!-- Don’t miss to subscribe to our new feeds, kindly fill the form below. -->
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                                </p>
-                                <form action="#">
-                                    <div class="form-row">
-                                        <div class="col dk-footer-form d-flex">
-                                            <input type="email" class="form-control" placeholder="Email Address">
-                                            <button type="submit">
-                                                <i class="fa fa-send"></i>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </form>
-                                <!-- End form -->
-                            </div>
-                            <!-- End footer widget -->
-                        </div>
-                        <!-- End Col -->
-                    </div>
-                    <!-- End Row -->
-                </div>
-                <!-- End Col -->
-            </div>
-            <!-- End Widget Row -->
-        </div>
-        <!-- End Contact Container -->
-
-
-        <div class="copyright">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <span>Copyright © 2022, Attuality Store, All Right Reserved</span>
-                    </div>
-                    <!-- End Col -->
-                    <div class="col-md-6">
-                        <div class="copyright-menu">
-                            <ul>
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">Terms</a></li>
-                                <li><a href="#">Privacy Policy</a></li>
-                                <li><a href="#">Contact</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- End col -->
-                </div>
-                <!-- End Row -->
-            </div>
-            <!-- End Copyright Container -->
-        </div>
-        <!-- End Copyright -->
-        <!-- Back to top -->
-        <div id="back-to-top" class="back-to-top">
-            <a href="#mainSection">
-                <button class="btn btn-dark" title="Back to Top" style="display: block;">
-                    <i class="fa fa-angle-up"></i>
-                </button>
-            </a>
-        </div>
-        <!-- End Back to top -->
-        </footer>
-
-
-
-        <!-- Bootstrap core JavaScript -->
-        <script src="vendor/jquery/jquery.min.js"></script>
-        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-
-        <!-- Additional Scripts -->
-        <script src="assets/js/custom.js"></script>
-        <script src="assets/js/owl.js"></script>
-        <script src="assets/js/slick.js"></script>
-        <script src="assets/js/isotope.js"></script>
-        <script src="assets/js/accordions.js"></script>
-
-        <script>
-            $('.owl-carousel.brands').owlCarousel({
-                rtl: false,
-                loop: true,
-                pagination: false,
-                dots: false,
-                margin: 0,
-                autoplay: 1500,
-                autoplayTimeout: 2500,
-                autoplayHoverPause: false,
-                responsive: {
-                    0: {
-                        items: 1
-                    },
-                    600: {
-                        items: 2
-                    },
-                    1000: {
-                        items: 4
-                    }
-                }
-            })
-
-            $('.owl-carousel.announcements').owlCarousel({
-                loop: true,
-                items: 1,
-                autoplay: true,
-                autoplayTimeout: 4000,
-                autoplayHoverPause: false,
-            })
-        </script>
-
-        <script language="text/Javascript">
-            cleared[0] = cleared[1] = cleared[2] = 0; //set a cleared flag for each field
-            function clearField(t) {                   //declaring the array outside of the
-                if (!cleared[t.id]) {                      // function makes it static and global
-                    cleared[t.id] = 1;  // you could use true and false, but that's more typing
-                    t.value = '';         // with more chance of typos
-                    t.style.color = '#fff';
-                }
-            }
-        </script>
-
-
-</body>
-
-</html>
+{% endblock content %}

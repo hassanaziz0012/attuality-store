@@ -1,0 +1,4 @@
+attuality_store/attuality_store/__pycache__/
+attuality_store/main/__pycache__/
+attuality_store/db.sqlite3
+attuality_store/main/migrations/__pycache__/

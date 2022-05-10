@@ -13,10 +13,25 @@
     src: url("/assets/fonts/Proxima Nova Font.otf");
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 *,
 html,
 body {
-    font-family: 'proxima-nova', sans-serif !important;
+    font-family: 'proxima-nova', sans-serif;
+}
+
+i.fa {
+    font-family: 'FontAwesome', sans-serif !important;
+}
+
+.navbar-brand div.social-icons a {
+    margin: 0 10px;
+    display: inline;
+}
+
+.navbar-brand img {
+    margin-right: 50px;
 }
 
 .brand-content {
@@ -31,11 +46,16 @@ body {
 
 .announcements p {
     font-weight: 500;
-    text-decoration: underline;
+    color: #f33f3f;
 }
 
 .announcements p span {
     white-space: pre;
+}
+
+.announcements p span em {
+    color: #000;
+    font-style: normal;
 }
 
 .navbar-brand img.logo {
@@ -48,6 +68,11 @@ a.red-link {
 
 a.red-link:hover {
     font-weight: 600;
+}
+
+.footer-text {
+    text-align: center;
+    font-weight: 500;
 }
 
 /* PRODUCT CARD STYLES - START */
