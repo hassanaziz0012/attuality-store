@@ -46,7 +46,7 @@ i.fa {
 
 .announcements p {
     font-weight: 500;
-    color: #f33f3f;
+    color: #000;
 }
 
 .announcements p span {
@@ -62,11 +62,12 @@ i.fa {
     width: 175px;
 }
 
-a.red-link {
-    color: #f33f3f;
+a.announcement-link {
+    color: #000;
+    text-decoration: underline !important;
 }
 
-a.red-link:hover {
+a.announcement-link:hover {
     font-weight: 600;
 }
 
@@ -682,7 +683,7 @@ a.red-link:hover {
     background-color: #202020;
 }
 
-.copyright span,
+.copyright div.content,
 .copyright a {
     color: #878787;
     -webkit-transition: all 0.3s linear;
