@@ -10,7 +10,7 @@
     font-family: proxima-nova;
     font-weight: 400;
     font-style: normal;
-    src: url("/assets/fonts/Proxima Nova Font.otf");
+    src: url("/static/assets/fonts/Proxima Nova Font.otf");
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
