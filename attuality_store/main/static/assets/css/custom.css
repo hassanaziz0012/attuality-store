@@ -21,6 +21,10 @@ body {
     font-family: 'proxima-nova', sans-serif;
 }
 
+body {
+    background-color: #e7e7e7;
+}
+
 i.fa {
     font-family: 'FontAwesome', sans-serif !important;
 }
@@ -51,9 +55,17 @@ i.fa {
     margin-left: 12%;
 }
 
+.top-right-nav * {
+    margin: auto 5px;
+}
+
 .dropdown:hover .dropdown-menu {
     display: block;
     margin-top: 0; /* remove the gap so it doesn't close */
+ }
+
+ .dropdown:hover .dropdown-toggle::after {
+    transform: rotate(180deg);
  }
 
 .search-box {

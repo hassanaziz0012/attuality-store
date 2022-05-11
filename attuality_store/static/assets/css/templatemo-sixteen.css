@@ -221,7 +221,6 @@ header {
 	position: fixed; 
 }
 .background-header .announcements p {
-	display: none;
 	color: #121212!important;
 }
 .background-header .navbar-nav .nav-link:hover,
