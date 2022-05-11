@@ -52,7 +52,8 @@ https://templatemo.com/tm-546-sixteen-clothing
                     <span class="text-danger">SPEDIZIONE GRATUITA <em>|</em> PAGAMENTO ALLA CONSEGNA</span>
                 </p>
                 <p>
-                    <span class="text-black">SCOPRI <em>|</em> <a class="announcement-link" href="#">NUOVI ARRIVI</a></span>
+                    <span class="text-black">SCOPRI <em>|</em> <a class="announcement-link" href="#">NUOVI
+                            ARRIVI</a></span>
                 </p>
             </div>
         </div>
@@ -69,8 +70,9 @@ https://templatemo.com/tm-546-sixteen-clothing
                     </div>
                     <img src="/static/assets/images/logo-white-transparent.png" alt="Attuliaty Store Logo"
                         class="img-fluid logo">
-                    <div>
-
+                    <div class="search-box">
+                        <i class="fa fa-search text-white"></i>
+                        <input type="text" name="search" id="search" placeholder="CERCA...">
                     </div>
                 </div>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
@@ -80,12 +82,13 @@ https://templatemo.com/tm-546-sixteen-clothing
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item active">
-                            <a class="nav-link" href="index.html">HOME
+                            <a class="nav-link" href="#">HOME
                                 <span class="sr-only">(current)</span>
                             </a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="uomoDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="#" id="uomoDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 ABBIGLIAMENTO UOMO
                             </a>
 
@@ -102,7 +105,8 @@ https://templatemo.com/tm-546-sixteen-clothing
                             </div>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="accessoryDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="#" id="accessoryDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 ACCESSORI
                             </a>
 
@@ -113,7 +117,8 @@ https://templatemo.com/tm-546-sixteen-clothing
                             </div>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="brandDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="#" id="brandDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 BRAND
                             </a>
 
@@ -140,103 +145,27 @@ https://templatemo.com/tm-546-sixteen-clothing
     <footer id="dk-footer" class="dk-footer">
         <div class="container">
             <div class="row">
-                <div class="col-md-12 col-lg-4">
-                    <div class="dk-footer-box-info">
-                        <a href="index.html" class="footer-logo">
-                            <img src="/static/assets/images/logo-white-transparent.png" alt="footer_logo"
-                                class="img-fluid">
-                        </a>
-                        <p class="footer-info-text text-secondary">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde culpa doloremque quos hic
-                            repellat id itaque ducimus vel tempore laborum?
-                        </p>
-                        <div class="footer-social-link">
-                            <h3>Follow us</h3>
-                            <ul>
-                                <li>
-                                    <a href="#"><i class="fa fa-facebook"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#"><i class="fa fa-twitter"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#"><i class="fa fa-google-plus"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#"><i class="fa fa-linkedin"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#"><i class="fa fa-instagram"></i></a>
-                                </li>
-                            </ul>
-                        </div>
-                        <!-- End Social link -->
+                <div class="col-md-12">
+                    <div class="footer-widget footer-left-widget">
+                        <ul>
+                            <li><a href="{% url 'attuality-store' %}">Attuality Store</a></li>
+                            <li><a href="{% url 'privacy' %}">Privacy & Cookie Policy</a></li>
+                            <li><a href="{% url 'domande-frequenti' %}">Domande Frequenti</a></li>
+                            <li><a href="{% url 'contattaci' %}">Contattaci</a></li>
+                            <li><a href="{% url 'spedizione-resi-gratuiti' %}">Spedizione e resi gratuiti</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li><a href="{% url 'pagamento' %}">Pagamento</a></li>
+                            <li><a href="{% url 'spedizione' %}">Spedizione</a></li>
+                            <li><a href="{% url 'resi-cambi' %}">Resi & Cambi</a></li>
+                            <li><a href="{% url 'servizi' %}">Servizi Online Esclusivi</a></li>
+                        </ul>
                     </div>
                 </div>
-                <!-- End Col -->
-                <div class="col-md-12 col-lg-8">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="contact-us">
-                                <div class="contact-icon">
-                                    <i class="fa fa-map-o" aria-hidden="true"></i>
-                                </div>
-                                <!-- End contact Icon -->
-                                <div class="contact-info">
-                                    <h3>Attuality.store@gmail.com</h3>
-                                    <p class="text-secondary">Send us an email</p>
-                                </div>
-                                <!-- End Contact Info -->
-                            </div>
-                            <!-- End Contact Us -->
-                        </div>
-                        <!-- End Col -->
-                        <div class="col-md-6">
-                            <div class="contact-us contact-us-last">
-                                <div class="contact-icon">
-                                    <i class="fa fa-volume-control-phone" aria-hidden="true"></i>
-                                </div>
-                                <!-- End contact Icon -->
-                                <div class="contact-info">
-                                    <h3>+39 389 5392915</h3>
-                                    <p class="text-secondary">Give us a call</p>
-                                </div>
-                                <!-- End Contact Info -->
-                            </div>
-                            <!-- End Contact Us -->
-                        </div>
-                        <!-- End Col -->
-                    </div>
-                    <!-- End Contact Row -->
-                    <div class="row">
-                        <div class="col-md-12 col-lg-10">
-                            <div class="footer-widget footer-left-widget">
-                                <ul>
-                                    <li><a href="{% url 'attuality-store' %}">Attuality Store</a></li>
-                                    <li><a href="{% url 'privacy' %}">Privacy & Cookie Policy</a></li>
-                                    <li><a href="{% url 'domande-frequenti' %}">Domande Frequenti</a></li>
-                                    <li><a href="{% url 'contattaci' %}">Contattaci</a></li>
-                                    <li><a href="{% url 'spedizione-resi-gratuiti' %}">Spedizione e resi gratuiti</a>
-                                    </li>
-                                </ul>
-                                <ul>
-                                    <li><a href="{% url 'pagamento' %}">Pagamento</a></li>
-                                    <li><a href="{% url 'spedizione' %}">Spedizione</a></li>
-                                    <li><a href="{% url 'resi-cambi' %}">Resi & Cambi</a></li>
-                                    <li><a href="{% url 'servizi' %}">Servizi Online Esclusivi</a></li>
-                                </ul>
-                            </div>
-                            <!-- End Footer Widget -->
-                        </div>
 
-                    </div>
-                    <!-- End Row -->
-                </div>
-                <!-- End Col -->
             </div>
-            <!-- End Widget Row -->
         </div>
-        <!-- End Contact Container -->
 
 
         <div class="copyright">

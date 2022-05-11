@@ -48,7 +48,27 @@ i.fa {
 }
 
 .navbar-brand img {
-    margin-right: 50px;
+    margin-left: 12%;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; /* remove the gap so it doesn't close */
+ }
+
+.search-box {
+    border-bottom: 1px solid #fff;
+}
+
+input#search {
+    border: none;
+    color: #fff;
+    font-size: 15px;
+}
+
+.search-box, input#search {
+    background-color: transparent;
+    outline: none;
 }
 
 .brand-content {
@@ -561,6 +581,10 @@ a.announcement-link:hover {
 
 .footer-widget .section-heading {
     margin-bottom: 35px;
+}
+
+.footer-widget {
+    text-align: left;
 }
 
 .footer-widget h3 {
