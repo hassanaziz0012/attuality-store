@@ -130,7 +130,16 @@ a.announcement-link:hover {
     font-weight: 500;
 }
 
+
 /* PRODUCT CARD STYLES - START */
+.latest-products .col-md-12 {
+    background-color: #fff;
+}
+
+.latest-products .col-md-12 .section-heading a {
+    text-decoration: underline;
+}
+
 .products {
     background-color: #e7e7e7;
 }
