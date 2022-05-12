@@ -160,8 +160,19 @@ a.announcement-link:hover {
     border-bottom: none;
 }
 
-.product .card-header i.fa {
+.product .card-header i.fa-heart {
     width: 90%;
+    position: relative;
+    top: 4rem;
+    visibility: hidden;
+}
+
+.product .card-header i.fa-heart:hover {
+    cursor: pointer;
+}
+
+.product:hover .card-header i.fa-heart {
+    visibility: visible;
 }
 
 .product .card-body {
