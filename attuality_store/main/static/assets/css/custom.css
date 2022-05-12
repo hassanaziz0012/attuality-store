@@ -140,6 +140,10 @@ a.announcement-link:hover {
     padding-top: 20px;
 }
 
+.newsletter .container-fluid {
+    width: 80%;
+}
+
 .newsletter .section-heading {
     border-bottom: none;
 }
@@ -150,11 +154,13 @@ a.announcement-link:hover {
     outline: none;
     color: rgba(0, 0, 0, 0.5);
     width: 100%;
+    border: 1px solid #eee;
+    border-radius: 0;
 }
 
 .newsletter .input button {
     border-radius: 0;
-    padding: 20px 10px;
+    padding: 20px 6em;
 }
 
 /* NEWSLETTER STYLES - END */
