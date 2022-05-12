@@ -107,6 +107,10 @@ input#search {
     white-space: pre;
 }
 
+.announcements p span.text-danger {
+    color: #f33f3f !important;
+}
+
 .announcements p span em {
     color: #000;
     font-style: normal;
