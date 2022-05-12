@@ -135,6 +135,30 @@ a.announcement-link:hover {
 }
 
 
+/* NEWSLETTER STYLES - START */
+.newsletter {
+    padding-top: 20px;
+}
+
+.newsletter .section-heading {
+    border-bottom: none;
+}
+
+.newsletter .input input#email {
+    padding: 20px 0;
+    padding-left: 10px;
+    outline: none;
+    color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+}
+
+.newsletter .input button {
+    border-radius: 0;
+    padding: 20px 10px;
+}
+
+/* NEWSLETTER STYLES - END */
+
 /* PRODUCT CARD STYLES - START */
 .latest-products {
     background-color: #fff;
