@@ -448,6 +448,9 @@ a.announcement-link:hover {
 
 
 /* FOOTER STYLES - START */
+footer {
+    background-color: #000;
+}
 
 .animate-border {
     position: relative;
@@ -552,7 +555,6 @@ a.announcement-link:hover {
 
 .dk-footer {
     padding: 75px 0 0;
-    background-color: #151414;
     position: relative;
     z-index: 2;
 }
@@ -700,7 +702,7 @@ a.announcement-link:hover {
 }
 
 .footer-widget a {
-    color: #878787;
+    color: #fff;
     -webkit-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s;
@@ -806,7 +808,7 @@ a.announcement-link:hover {
 }
 
 .footer-header {
-    color: #878787;
+    color: #fff;
 }
 
 .copyright {
