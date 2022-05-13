@@ -146,6 +146,7 @@ a.announcement-link:hover {
 
 .newsletter .section-heading {
     border-bottom: none;
+    margin-bottom: 10px;
 }
 
 .newsletter .input input#email {
@@ -160,7 +161,9 @@ a.announcement-link:hover {
 
 .newsletter .input button {
     border-radius: 0;
+    border: 1px solid #202020;
     padding: 20px 6em;
+    background-color: #202020;
 }
 
 /* NEWSLETTER STYLES - END */
@@ -560,10 +563,6 @@ a.announcement-link:hover {
     padding-left: 80px;
 }
 
-.dk-footer .contact-us .contact-info {
-    margin-left: 50px;
-}
-
 .dk-footer .contact-us.contact-us-last {
     margin-left: -80px;
 }
@@ -794,15 +793,20 @@ a.announcement-link:hover {
     color: #007bff;
 }
 
-.contact-info {
-    margin-left: 75px;
-    color: #fff;
+.social-icons.footer-icons a {
+    margin: auto 10px;
+}
+.social-icons.footer-icons a:first-child {
+    margin-left: 0;
 }
 
-.contact-info h3 {
-    font-size: 20px;
-    color: #fff;
-    margin-bottom: 0;
+.footer-widget ul {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.footer-header {
+    color: #878787;
 }
 
 .copyright {
@@ -838,7 +842,24 @@ a.announcement-link:hover {
     z-index: 2;
 }
 
-.back-to-top .btn-dark {
+.back-to-top .top-btn {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    padding: 0;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background: #2e2e2e;
+    border-color: #2e2e2e;
+    display: none;
+    z-index: 999;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+
+.back-to-top .live-chat {
     width: 35px;
     height: 35px;
     border-radius: 50%;
@@ -859,6 +880,11 @@ a.announcement-link:hover {
     cursor: pointer;
     background: #f33f3f;
     border-color: #f33f3f;
+}
+
+.payment-icons img {
+    width: 64px;
+    margin: auto 5px;
 }
 
 /* FOOTER STYLES - END */

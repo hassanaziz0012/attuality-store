@@ -65,7 +65,7 @@ https://templatemo.com/tm-546-sixteen-clothing
                         <a href="https://www.instagram.com/attuality.store/" target="_blank">
                             <i class="fa fa-instagram" style="color: #fff;"></i>
                         </a>
-                        <a href="#" target="_blank">
+                        <a href="https://www.tiktok.com/@attuality.store?lang=it-IT" target="_blank">
                             <i class="fab fa-tiktok" style="color: #fff;"></i>
                         </a>
                     </div>
@@ -150,25 +150,83 @@ https://templatemo.com/tm-546-sixteen-clothing
     {% endblock content %}
 
     <footer id="dk-footer" class="dk-footer">
-        <div class="container">
+        <div class="container-lg">
             <div class="row">
-                <div class="col-md-12">
-                    <div class="footer-widget footer-left-widget">
+
+                <div class="col-md-2">
+                    <div class="footer-widget footer-left-widget d-flex flex-column">
+                        <h4 class="footer-header">Social</h4>
                         <ul>
-                            <li><a href="{% url 'attuality-store' %}">Attuality Store</a></li>
-                            <li><a href="{% url 'privacy' %}">Privacy & Cookie Policy</a></li>
+                            <li><a href="https://www.facebook.com/Attuality.store">Facebook</a></li>
+                            <li><a href="https://www.instagram.com/attuality.store/">Instagram</a></li>
+                            <li><a href="https://www.tiktok.com/@attuality.store?lang=it-IT">Tiktok</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-2">
+                    <div class="footer-widget footer-left-widget">
+                        <h4 class="footer-header">Servizi Esclusivi</h4>
+
+                        <ul>
+                            <li><a href="{% url 'servizi' %}">Servizi Online Esclusivi</a></li>
+                            <li><a href="{% url 'spedizione-resi-gratuiti' %}">Spedizione e resi gratuiti</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-2">
+                    <div class="footer-widget footer-left-widget">
+                        <h4 class="footer-header">Possiamo Aiutarti?</h4>
+
+                        <ul>
                             <li><a href="{% url 'domande-frequenti' %}">Domande Frequenti</a></li>
                             <li><a href="{% url 'contattaci' %}">Contattaci</a></li>
-                            <li><a href="{% url 'spedizione-resi-gratuiti' %}">Spedizione e resi gratuiti</a>
-                            </li>
-                        </ul>
-                        <ul>
                             <li><a href="{% url 'pagamento' %}">Pagamento</a></li>
                             <li><a href="{% url 'spedizione' %}">Spedizione</a></li>
                             <li><a href="{% url 'resi-cambi' %}">Resi & Cambi</a></li>
-                            <li><a href="{% url 'servizi' %}">Servizi Online Esclusivi</a></li>
                         </ul>
                     </div>
+                </div>
+
+                <div class="col-md-2">
+                    <div class="footer-widget footer-left-widget">
+                        <h4 class="footer-header">Informazioni Aziendali</h4>
+                        
+                        <ul>
+                            <li><a href="{% url 'attuality-store' %}">Attuality Store</a></li>
+                            <li><a href="{% url 'privacy' %}">Privacy & Cookie Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-2 d-flex flex-column footer-logo-container align-items-center">
+                    <img src="/static/assets/images/logo-white-transparent.png" alt="" class="footer-logo img-fluid" width="250">
+                    <h4 class="text-left footer-header">SEGUICI</h4>
+
+                    <div class="social-icons footer-icons d-flex justify-content-start">
+                        <a href="https://www.facebook.com/Attuality.store" target="_blank">
+                            <i class="fa fa-facebook" style="color: #fff;"></i>
+                        </a>
+                        <a href="https://www.instagram.com/attuality.store/" target="_blank">
+                            <i class="fa fa-instagram" style="color: #fff;"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/@attuality.store?lang=it-IT" target="_blank">
+                            <i class="fab fa-tiktok" style="color: #fff;"></i>
+                        </a>
+                    </div>
+
+                    <div class="contact-info text-light d-flex flex-column text-center mt-3">
+                        <p>attuality.store@gmail.com</p>
+                        <p>+39 389 5392915</p>
+                    </div>
+                </div>
+
+                <div class="col-md-12 payment-icons">
+                    <img src="/static/assets/images/visa.png" alt="Visa">
+                    <img src="/static/assets/images/maestro.png" alt="Maestro">
+                    <img src="/static/assets/images/american-express.png" alt="American Express">
+                    <img src="/static/assets/images/paypal.png" alt="PayPal">
                 </div>
 
             </div>
@@ -190,10 +248,14 @@ https://templatemo.com/tm-546-sixteen-clothing
         <!-- Back to top -->
         <div id="back-to-top" class="back-to-top">
             <a href="#mainSection">
-                <button class="btn btn-dark" title="Back to Top" style="display: block;">
+                <button class="btn btn-dark top-btn" title="Back to Top" style="display: block;">
                     <i class="fa fa-angle-up"></i>
                 </button>
             </a>
+
+            <button class="btn btn-dark live-chat" title="Live Chat" style="display: block;">
+                <i class="fa fa-comments"></i>
+            </button>
         </div>
         <!-- End Back to top -->
     </footer>
