@@ -841,6 +841,11 @@ footer {
     padding-left: 20px;
 }
 
+.footer-logo-container {
+    position: relative;
+    top: -1.5rem;
+}
+
 .back-to-top {
     position: relative;
     z-index: 2;
@@ -877,7 +882,7 @@ footer {
 }
 
 .payment-icons img {
-    width: 64px;
+    width: 48px;
     margin: auto 5px;
 }
 
