@@ -79,9 +79,17 @@ WSGI_APPLICATION = 'attuality_store.wsgi.application'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
 DATABASES = {
-    'default': {
+    'local': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
+    },
+    "default": {
+        "ENGINE": "django.db.backends.postgresql_psycopg2",
+        'NAME': 'postgres',
+        'USER': 'attualitystore',
+        'PASSWORD': 'attualitystore',
+        'HOST': 'attuality-store.chx4figr0bbb.us-east-1.rds.amazonaws.com',
+        'PORT': '5432'
     }
 }
 
@@ -124,6 +132,12 @@ USE_TZ = True
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_URL = '/static/'
+
+# Base url to serve media files
+MEDIA_URL = '/media/'
+
+# Path where media is stored
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field

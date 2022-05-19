@@ -1,5 +1,8 @@
 from django.urls import path
+from django.conf import settings
+from django.conf.urls.static import static
 from main import views
+
 
 urlpatterns = [
     path('', views.HomeView.as_view(), name="home"),
@@ -13,3 +16,6 @@ urlpatterns = [
     path('resi_cambi', views.ResiCambiView.as_view(), name="resi-cambi"),
     path('servizi', views.ServiziView.as_view(), name="servizi"),
 ]
+
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
