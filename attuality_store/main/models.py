@@ -4,6 +4,7 @@ from django.db import models
 class Product(models.Model):
     name = models.CharField(max_length=500, unique=True)
 
+    brand = models.CharField(max_length=100, null=True, blank=False)
     price = models.FloatField(default=0)
     discounted_price = models.FloatField(default=0)
     sizes = models.JSONField(null=True, blank=True)
