@@ -38,7 +38,7 @@
                         </div>
 
                         <div class="card-body">
-                            <h5 class="card-title">{{ product.name }}</h5>
+                            <a href="{% url 'product' name=product.name %}"><h5 class="card-title">{{ product.name }}</h5></a>
                             <h6 class="card-text price">{{ product.discounted_price }}€ <span class="discounted-price">{{ product.price }}€</span></h6>
                         </div>
 
@@ -47,6 +47,10 @@
                                 {% for size in product.sizes %}
                                 <button class="size">{{ size }}</button>
                                 {% endfor %}
+
+                                {% if product.sizes|length == 0 %}
+                                <button class="size"></button>
+                                {% endif %}
                             </div>
                         </div>
                     </div>

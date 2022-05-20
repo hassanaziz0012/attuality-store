@@ -244,6 +244,7 @@ a.announcement-link:hover {
     text-transform: uppercase;
     text-align: center;
     font-size: 17px;
+    color: #000;
 }
 
 .product .card-body .price {
@@ -887,3 +888,4 @@ footer {
 }
 
 /* FOOTER STYLES - END */
+
