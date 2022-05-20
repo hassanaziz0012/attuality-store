@@ -39,7 +39,10 @@
 
                         <div class="card-body">
                             <a href="{% url 'product' name=product.name %}"><h5 class="card-title">{{ product.name }}</h5></a>
-                            <h6 class="card-text price">{{ product.discounted_price }}€ <span class="discounted-price">{{ product.price }}€</span></h6>
+                            <h6 class="card-text price">
+                                {{ product.discounted_price|floatformat:2 }}€ 
+                                <span class="discounted-price">{{ product.price|floatformat:2 }}€</span>
+                            </h6>
                         </div>
 
                         <div class="card-footer">
