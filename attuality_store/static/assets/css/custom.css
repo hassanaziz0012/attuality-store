@@ -51,7 +51,7 @@ i.fa {
     display: inline;
 }
 
-.navbar-brand img {
+.navbar-brand img.logo {
     margin-left: 16%;
 }
 
@@ -134,6 +134,16 @@ a.announcement-link:hover {
 .footer-text {
     text-align: center;
     font-weight: 500;
+}
+
+.section-heading {
+    border-bottom: none !important;
+    margin-bottom: 20px;
+}
+
+.section-heading em {
+    font-style: normal;
+    color: #f33f3f;
 }
 
 
@@ -238,6 +248,14 @@ a.announcement-link:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.product .card-body a {
+    color: #000;
+    text-decoration: none;
+}
+.product .card-body a:hover {
+    text-decoration: underline;
 }
 
 .product .card-body .card-title {

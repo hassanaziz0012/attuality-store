@@ -4,64 +4,103 @@
 {% endblock css %}
 
 {% block content %}
-<section class="container product-page product">
-
-    <!-- Left Column / Headphones Image -->
-    <div class="left-column">
-        <img src="{{ product.image.url }}" alt="">
-    </div>
-
-
-    <!-- Right Column -->
-    <div class="right-column">
-
-        <!-- Product Description -->
-        <div class="product-description">
-            <span>{{ product.brand }}</span>
-            <h1>{{ product.name }}</h1>
+<section class="product-page-section pt-5">
+    <div class="product-container product-page product d-flex align-items-center">
+        <!-- Left Column / Headphones Image -->
+        <div class="left-column">
+            <img src="{{ product.image.url }}" alt="">
         </div>
-
-        <!-- Product Configuration -->
-        <div class="product-configuration">
-
-            <!-- Product Color -->
-            <!-- <div class="product-color">
-                <span>Color</span>
-
-                <div class="color-choose">
-                    <div>
-                        <input data-image="red" type="radio" id="red" name="color" value="red" checked>
-                        <label for="red"><span></span></label>
-                    </div>
-                    <div>
-                        <input data-image="blue" type="radio" id="blue" name="color" value="blue">
-                        <label for="blue"><span></span></label>
-                    </div>
-                    <div>
-                        <input data-image="black" type="radio" id="black" name="color" value="black">
-                        <label for="black"><span></span></label>
+    
+    
+        <!-- Right Column -->
+        <div class="right-column d-flex flex-column justify-content-between">
+    
+            <!-- Product Description -->
+            <div class="product-description">
+                <span>{{ product.brand }}</span>
+                <h1>{{ product.name }}</h1>
+            </div>
+    
+            <!-- Product Configuration -->
+            <div class="product-configuration">
+    
+                <!-- Product Color -->
+                <div class="product-color">
+                    <span>Color</span>
+    
+                    <div class="color-choose">
+                        <div>
+                            <input data-image="red" type="radio" id="red" name="color" value="red" checked>
+                            <label for="red"><span></span></label>
+                        </div>
+                        <div>
+                            <input data-image="blue" type="radio" id="blue" name="color" value="blue">
+                            <label for="blue"><span></span></label>
+                        </div>
+                        <div>
+                            <input data-image="black" type="radio" id="black" name="color" value="black">
+                            <label for="black"><span></span></label>
+                        </div>
                     </div>
                 </div>
-            </div> -->
-
-            <!-- Cable Configuration -->
-            <div class="cable-config">
-                <span>Sizes</span>
-
-                <div class="cable-choose">
-                    {% for size in product.sizes %}
-                        <button>{{ size }}</button>
-                    {% endfor %}
+    
+                <!-- Cable Configuration -->
+                <div class="cable-config">
+                    <span>Sizes</span>
+    
+                    <div class="cable-choose">
+                        {% for size in product.sizes %}
+                            <button>{{ size }}</button>
+                        {% endfor %}
+                    </div>
+    
                 </div>
-
+            </div>
+    
+            <!-- Product Pricing -->
+            <div class="product-price">
+                <span class="discounted-price">175€</span>
+                <span class="price">700€</span>
+                <a href="#" class="cart-btn">Add to cart</a>
             </div>
         </div>
 
-        <!-- Product Pricing -->
-        <div class="product-price">
-            <span class="discounted-price">175€</span>
-            <span class="price">700€</span>
-            <a href="#" class="cart-btn">Add to cart</a>
+    </div>
+
+    <div class="brand-products container-lg">
+        <h2 class="section-heading">More from <em>{{ product.brand }}</em></h2>
+
+        <div class="row">
+            {% for product in brand_products %}
+                <div class="col-md-2 card product">
+                    <div class="card-header">
+                        <i class="fa fa-heart fa-lg text-right"></i>
+                        <img class="img card-image-top"
+                            src="{{ product.image.url }}" class="img-fluid"
+                            alt="">
+                    </div>
+    
+                    <div class="card-body">
+                        <a href="{% url 'product' name=product.name %}"><h5 class="card-title">{{ product.name }}</h5></a>
+                        <h6 class="card-text price">
+                            {{ product.discounted_price|floatformat:2 }}€ 
+                            <span class="discounted-price">{{ product.price|floatformat:2 }}€</span>
+                        </h6>
+                    </div>
+    
+                    <div class="card-footer">
+                        <div class="sizes d-flex justify-content-center flex-wrap">
+                            {% for size in product.sizes %}
+                            <button class="size">{{ size }}</button>
+                            {% endfor %}
+    
+                            {% if product.sizes|length == 0 %}
+                            <button class="size"></button>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
         </div>
     </div>
 </section>

@@ -1,6 +1,6 @@
 /* PRODUCT PAGE STYLES - START */
 /* Basic Styling */
-.container {
+.product-container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 15px;
@@ -203,7 +203,7 @@ section.product {
 
 /* Responsive */
 @media (max-width: 940px) {
-    .container {
+    .product-container {
         flex-direction: column;
         margin-top: 60px;
     }

@@ -7,7 +7,7 @@ from main.models import Product
 # Create your views here.
 class HomeView(View):
     def get(self, request):
-        products = Product.objects.all().order_by('order')
+        products = Product.objects.all().order_by('order')[0:10]
         return render(request, 'index.html', context={'products': products})
 
 
@@ -15,10 +15,11 @@ class ProductView(View):
     def get(self, request, name):
         try:
             product = Product.objects.get(name=name)
+            brand_products = Product.objects.filter(brand=product.brand)[0:10]
         except Product.DoesNotExist:
             return HttpResponse(status=404)
 
-        return render(request, 'product.html', context={'product': product})
+        return render(request, 'product.html', context={'product': product, 'brand_products': brand_products})
 
 
 # Footer views
