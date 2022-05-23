@@ -51,7 +51,7 @@ i.fa {
     display: inline;
 }
 
-.navbar-brand img.logo {
+.navbar-brand a.logo {
     margin-left: 16%;
 }
 
@@ -303,7 +303,7 @@ a.announcement-link:hover {
     font-weight: 400;
     min-width: 30px;
     height: 22px;
-    border: 1px solid rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .product .card-footer .sizes .size:hover {
@@ -884,6 +884,10 @@ footer {
     -webkit-transition: all 0.3s linear;
     -o-transition: all 0.3s linear;
     transition: all 0.3s linear;
+}
+
+footer a {
+    text-decoration: none;
 }
 
 .back-to-top .top-btn {

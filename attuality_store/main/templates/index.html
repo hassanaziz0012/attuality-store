@@ -1,192 +1,191 @@
 {% extends 'base.html' %}
 {% block content %}
-    <!-- Page Content -->
-    <!-- Banner Starts Here -->
-    <div id="mainSection" class="banner header-text">
-        <div class="banner-item-01 d-flex flex-column justify-content-center">
-            <div class="text-content">
-                <div class="section-heading d-flex justify-content-center">
-                    <h2>ULTIMI ARRIVI</h2>
+<!-- Page Content -->
+<!-- Banner Starts Here -->
+<div id="mainSection" class="banner header-text">
+    <div class="banner-item-01 d-flex flex-column justify-content-center">
+        <div class="text-content">
+            <div class="section-heading d-flex justify-content-center">
+                <h2>ULTIMI ARRIVI</h2>
+            </div>
+            <div class="button">
+                <button class="btn btn-transparent btn-lg">ACQUISTA ORA</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!-- Banner Ends Here -->
+
+<div class="latest-products">
+    <div class="col-md-12">
+        <div class="section-heading">
+            <h2 class="text-center">I PIÙ VISUALIZZATI</h2>
+            <a href="#">MOSTRA TUTTO <i class="fa fa-angle-right"></i></a>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row products">
+            <div class="row d-flex justify-content-center">
+                {% for product in products %}
+                <div class="col-md-2 card product">
+                    <div class="card-header">
+                        <i class="fa fa-heart fa-lg text-right"></i>
+                        <a href="{% url 'product' name=product.name %}">
+                            <img class="img card-image-top" src="{{ product.image.url }}" class="img-fluid">
+                        </a>
+                    </div>
+
+                    <div class="card-body">
+                        <a href="{% url 'product' name=product.name %}">
+                            <h5 class="card-title">{{ product.name }}</h5>
+                        </a>
+                        <h6 class="card-text price">
+                            {{ product.discounted_price|floatformat:2 }}€
+                            <span class="discounted-price">{{ product.price|floatformat:2 }}€</span>
+                        </h6>
+                    </div>
+
+                    <div class="card-footer">
+                        <div class="sizes d-flex justify-content-center flex-wrap">
+                            {% for size in product.sizes %}
+                            <button class="size">{{ size }}</button>
+                            {% endfor %}
+
+                            {% if product.sizes|length == 0 %}
+                            <button class="size" style="visibility: hidden;"></button>
+                            {% endif %}
+                        </div>
+                    </div>
                 </div>
-                <div class="button">
-                    <button class="btn btn-transparent btn-lg">ACQUISTA ORA</button>
-                </div>
+                {% endfor %}
             </div>
 
         </div>
     </div>
-    <!-- Banner Ends Here -->
+</div>
 
-    <div class="latest-products">
-        <div class="col-md-12">
-            <div class="section-heading">
-                <h2 class="text-center">I PIÙ VISUALIZZATI</h2>
-                <a href="#">MOSTRA TUTTO <i class="fa fa-angle-right"></i></a>
-            </div>
-        </div>
-
-        <div class="container-fluid">
-            <div class="row products">
-                <div class="row d-flex justify-content-center">
-                    {% for product in products %}
-                    <div class="col-md-2 card product">
-                        <div class="card-header">
-                            <i class="fa fa-heart fa-lg text-right"></i>
-                            <img class="img card-image-top"
-                                src="{{ product.image.url }}" class="img-fluid"
-                                alt="">
-                        </div>
-
-                        <div class="card-body">
-                            <a href="{% url 'product' name=product.name %}"><h5 class="card-title">{{ product.name }}</h5></a>
-                            <h6 class="card-text price">
-                                {{ product.discounted_price|floatformat:2 }}€ 
-                                <span class="discounted-price">{{ product.price|floatformat:2 }}€</span>
-                            </h6>
-                        </div>
-
-                        <div class="card-footer">
-                            <div class="sizes d-flex justify-content-center flex-wrap">
-                                {% for size in product.sizes %}
-                                <button class="size">{{ size }}</button>
-                                {% endfor %}
-
-                                {% if product.sizes|length == 0 %}
-                                <button class="size"></button>
-                                {% endif %}
-                            </div>
-                        </div>
-                    </div>
-                    {% endfor %}
-                </div>
-
-            </div>
-        </div>
+<div class="best-features" id="brands">
+    <div class="best-features-header col-lg-12">
+        <h2><em>BRANDS</em> WE WORK WITH</h2>
     </div>
-
-    <div class="best-features" id="brands">
-        <div class="best-features-header col-lg-12">
-            <h2><em>BRANDS</em> WE WORK WITH</h2>
+    <div class="row owl-carousel brands">
+        <div class="test_box box-01 col-md-12">
+            <div class="inner">
+                <div href="#" class="test_click">
+                    <div class="flex_this">
+                        <h1 class="test_title">Versace</h1>
+                        <span class="test_link">Link</span>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="row owl-carousel brands">
-            <div class="test_box box-01 col-md-12">
-                <div class="inner">
-                    <div href="#" class="test_click">
-                        <div class="flex_this">
-                            <h1 class="test_title">Versace</h1>
-                            <span class="test_link">Link</span>
-                        </div>
+        <div class="test_box box-02 col-md-12">
+            <div class="inner">
+                <div href="#" class="test_click">
+                    <div class="flex_this">
+                        <h1 class="test_title">Fendi</h1>
+                        <span class="test_link">Link</span>
                     </div>
                 </div>
             </div>
-            <div class="test_box box-02 col-md-12">
-                <div class="inner">
-                    <div href="#" class="test_click">
-                        <div class="flex_this">
-                            <h1 class="test_title">Fendi</h1>
-                            <span class="test_link">Link</span>
-                        </div>
+        </div>
+        <div class="test_box box-03 col-md-12">
+            <div class="inner">
+                <div href="#" class="test_click">
+                    <div class="flex_this">
+                        <h1 class="test_title">Balmain</h1>
+                        <span class="test_link">Link</span>
                     </div>
                 </div>
             </div>
-            <div class="test_box box-03 col-md-12">
-                <div class="inner">
-                    <div href="#" class="test_click">
-                        <div class="flex_this">
-                            <h1 class="test_title">Balmain</h1>
-                            <span class="test_link">Link</span>
-                        </div>
+        </div>
+        <div class="test_box box-04 col-md-12">
+            <div class="inner">
+                <div href="#" class="test_click">
+                    <div class="flex_this">
+                        <h1 class="test_title">Valentino</h1>
+                        <span class="test_link">Link</span>
                     </div>
                 </div>
             </div>
-            <div class="test_box box-04 col-md-12">
-                <div class="inner">
-                    <div href="#" class="test_click">
-                        <div class="flex_this">
-                            <h1 class="test_title">Valentino</h1>
-                            <span class="test_link">Link</span>
-                        </div>
+        </div>
+        <div class="test_box box-05 col-md-12">
+            <div class="inner">
+                <div href="#" class="test_click">
+                    <div class="flex_this">
+                        <h1 class="test_title">Dsquared2</h1>
+                        <span class="test_link">Link</span>
                     </div>
                 </div>
             </div>
-            <div class="test_box box-05 col-md-12">
-                <div class="inner">
-                    <div href="#" class="test_click">
-                        <div class="flex_this">
-                            <h1 class="test_title">Dsquared2</h1>
-                            <span class="test_link">Link</span>
-                        </div>
+        </div>
+        <div class="test_box box-06 col-md-12">
+            <div class="inner">
+                <div href="#" class="test_click">
+                    <div class="flex_this">
+                        <h1 class="test_title">Marcelo Burlon</h1>
+                        <span class="test_link">Link</span>
                     </div>
                 </div>
             </div>
-            <div class="test_box box-06 col-md-12">
-                <div class="inner">
-                    <div href="#" class="test_click">
-                        <div class="flex_this">
-                            <h1 class="test_title">Marcelo Burlon</h1>
-                            <span class="test_link">Link</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="test_box box-07 col-md-12">
-                <div class="inner">
-                    <div href="#" class="test_click">
-                        <div class="flex_this">
-                            <h1 class="test_title">Palm Angels</h1>
-                            <span class="test_link">Link</span>
-                        </div>
+        </div>
+        <div class="test_box box-07 col-md-12">
+            <div class="inner">
+                <div href="#" class="test_click">
+                    <div class="flex_this">
+                        <h1 class="test_title">Palm Angels</h1>
+                        <span class="test_link">Link</span>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
 
 
-    <div class="call-to-action">
-        <div class="container-lg">
-            <div class="col-lg-12">
-                <div class="section-heading d-flex justify-content-center">
-                    <h2>PERCHÈ ATTUALITYSTORE?</h2>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-4 d-flex flex-column align-items-center text-center border-right">
-                    <img src="/static/assets/images/diamond.png" alt="" class="reason-image">
-                    <h4>Autenticità</h4>
-                    <p>Tutti gli articoli su questo Sito Web sono autentici.</p>
-                </div>
-                <div class="col-lg-4 d-flex flex-column align-items-center text-center border-right border-left">
-                    <img src="/static/assets/images/star.png" alt="" class="reason-image">
-                    <h4>Recensioni a 5 stelle su Trustpilot</h4>
-                    <p>Sai che puoi fidarti di noi.</p>
-                </div>
-                <div class="col-lg-4 d-flex flex-column align-items-center text-center border-left">
-                    <img src="/static/assets/images/delivery-status.png" alt="" class="reason-image">
-                    <h4>Spedizione Express in tutto il mondo</h4>
-                    <p>Spediamo in tutto il mondo!</p>
-                </div>
-            </div>
-
+<div class="call-to-action">
+    <div class="col-lg-12">
+        <div class="section-heading d-flex justify-content-center">
+            <h2>PERCHÈ ATTUALITYSTORE?</h2>
         </div>
     </div>
 
-    <div class="newsletter">
-        <div class="container-fluid d-flex justify-content-center">
-            <div class="section-heading d-flex flex-column align-items-center">
-                <h2 class="text-center">ISCRIVITI ALLA NEWSLETTER</h2>
-                <p class="text-center">
-                    Inserendo il tuo indirizzo E-mail, acconsenti a ricevere le newsletter 
-                    <br>
-                    Attualitystore relative alle ultime collezioni e sconti.
-                </p>
-            </div>
-
-            <div class="input d-flex align-items-start ml-3 flex-grow-1">
-                <input type="email" name="email" id="email" placeholder="Indirizzo E-mail">
-                <button class="btn btn-dark">SOTTOSCRIVI</button>
-            </div>
+    <div class="row">
+        <div class="col-lg-4 d-flex flex-column align-items-center text-center border-end">
+            <img src="/static/assets/images/diamond.png" alt="" class="reason-image">
+            <h4>Autenticità</h4>
+            <p>Tutti gli articoli su questo Sito Web sono autentici.</p>
+        </div>
+        <div class="col-lg-4 d-flex flex-column align-items-center text-center border-end border-start">
+            <img src="/static/assets/images/star.png" alt="" class="reason-image">
+            <h4>Recensioni a 5 stelle su Trustpilot</h4>
+            <p>Sai che puoi fidarti di noi.</p>
+        </div>
+        <div class="col-lg-4 d-flex flex-column align-items-center text-center border-start">
+            <img src="/static/assets/images/delivery-status.png" alt="" class="reason-image">
+            <h4>Spedizione Express in tutto il mondo</h4>
+            <p>Spediamo in tutto il mondo!</p>
         </div>
     </div>
+</div>
+
+<div class="newsletter">
+    <div class="container-fluid d-flex justify-content-center">
+        <div class="section-heading d-flex flex-column align-items-center" style="margin-right: 1em;">
+            <h2 class="text-center">ISCRIVITI ALLA NEWSLETTER</h2>
+            <p class="text-center">
+                Inserendo il tuo indirizzo E-mail, acconsenti a ricevere le newsletter
+                <br>
+                Attualitystore relative alle ultime collezioni e sconti.
+            </p>
+        </div>
+
+        <div class="input d-flex align-items-start ml-3 flex-grow-1">
+            <input type="email" name="email" id="email" placeholder="Indirizzo E-mail">
+            <button class="btn btn-dark">SOTTOSCRIVI</button>
+        </div>
+    </div>
+</div>
 {% endblock content %}

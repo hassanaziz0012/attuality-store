@@ -48,7 +48,7 @@ https://templatemo.com/tm-546-sixteen-clothing
     <!-- ***** Preloader End ***** -->
 
     <!-- Header -->
-    <header class="">
+    <header id="header" class="">
         <div class="d-flex justify-content-center align-items-center text-center announcements-container">
             <div class="announcements owl-carousel d-flex">
                 <p>
@@ -73,8 +73,9 @@ https://templatemo.com/tm-546-sixteen-clothing
                             <i class="fab fa-tiktok" style="color: #fff;"></i>
                         </a>
                     </div>
-                    <img src="/static/assets/images/logo-white-transparent.png" alt="Attuliaty Store Logo"
-                        class="img-fluid logo">
+                    <a href="{% url 'home' %}" class="logo">
+                        <img src="/static/assets/images/logo-white-transparent.png" alt="Attuliaty Store Logo" class="img-fluid logo">
+                    </a>
                     <div class="top-right-nav d-flex align-items-center">
                         <div class="search-box">
                             <i class="fa fa-search text-white"></i>
@@ -156,7 +157,7 @@ https://templatemo.com/tm-546-sixteen-clothing
     {% endblock content %}
 
     <footer id="dk-footer" class="dk-footer">
-        <div class="container-lg">
+        <div class="container-fluid">
             <div class="row">
 
                 <div class="col-md-2">
@@ -256,7 +257,7 @@ https://templatemo.com/tm-546-sixteen-clothing
         </div>
         <!-- Back to top -->
         <div id="back-to-top" class="back-to-top">
-            <a href="#mainSection">
+            <a href="#header">
                 <button class="btn btn-dark top-btn" title="Back to Top" style="display: block;">
                     <i class="fa fa-angle-up"></i>
                 </button>
